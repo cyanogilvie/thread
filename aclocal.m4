@@ -44,7 +44,8 @@ AC_DEFUN(TCLTHREAD_WITH_GDBM, [
                 `ls -d ${prefix}/lib 2>/dev/null`\
                 `ls -d /usr/local/lib 2>/dev/null`\
                 `ls -d /usr/lib 2>/dev/null`\
-                `ls -d /usr/lib/x86_64-linux-gnu 2>/dev/null` ; do
+                `ls -d /usr/lib/x86_64-linux-gnu 2>/dev/null`\
+                `ls -d /usr/lib/aarch64-linux-gnu 2>/dev/null` ; do
             if test x"`ls $i/libgdbm* 2>/dev/null`" != x ; then
                 glibdir=`(cd $i; pwd)`
                 break
@@ -107,7 +108,8 @@ AC_DEFUN(TCLTHREAD_WITH_LMDB, [
                     `ls -d ${prefix}/lib 2>/dev/null`\
                     `ls -d /usr/local/lib 2>/dev/null`\
                     `ls -d /usr/lib 2>/dev/null`\
-                    `ls -d /usr/lib/x86_64-linux-gnu 2>/dev/null` ; do
+                    `ls -d /usr/lib/x86_64-linux-gnu 2>/dev/null`\
+                    `ls -d /usr/lib/aarch64-linux-gnu 2>/dev/null` ; do
                 if test x"`ls $i/liblmdb* 2>/dev/null`" != x ; then
                     llibdir=`(cd $i; pwd)`
                     break
